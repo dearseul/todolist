@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/todolist
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+#        show_sql: true
+        format_sql: true
+    defer-datasource-initialization: true
+  Data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
+        one-indexed-parameters: true
+  sql:
+    init:
+      platform: h2
+      schema-locations: classpath:schema-h2.sql
+      mode: always
+#      data-locations: classpath:data-h2.sql
+logging.level:
+  org.hibernate.SQL: debug
+# org.hibernate.type: trace
