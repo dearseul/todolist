@@ -1,4 +1,4 @@
-# todolist
+# To Do List
 mini와 seulgi의 즐거운 사이드 프로젝트
 
 ## Back end
