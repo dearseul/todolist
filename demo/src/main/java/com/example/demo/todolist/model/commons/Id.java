@@ -1,4 +1,4 @@
-package todolist.model.commons;
+package com.example.demo.todolist.model.commons;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
