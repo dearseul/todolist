@@ -1,4 +1,4 @@
-package com.example.demo.todolist.configure;
+package com.example.demo.todolist.security;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;

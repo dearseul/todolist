@@ -1,4 +1,4 @@
-package com.example.demo.todolist.configure;
+package com.example.demo.todolist.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
