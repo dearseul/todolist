@@ -46,17 +46,12 @@ public class TokenProvider implements InitializingBean {
     }
 
     // 토큰 생성
-    public String createToken(Authentication authentication) {
-        String authorities = authentication.getAuthorities().stream()
-                .map(GrantedAuthority::getAuthority)
-                .collect(Collectors.joining(","));
-
+    public String createToken(String username) {
         long now = (new Date()).getTime();
         Date validity = new Date(now + this.tokenValidityMilliseconds);
 
         return Jwts.builder()
-                .setSubject(authentication.getName())
-                .claim(AUTHORITIES_KEY, authorities)
+                .setClaims(Jwts.claims().setSubject(username))
                 .signWith(key, SignatureAlgorithm.HS512)
                 .setExpiration(validity)
                 .compact();
