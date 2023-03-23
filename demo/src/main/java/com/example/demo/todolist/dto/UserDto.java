@@ -1,11 +1,11 @@
-package todolist.dto;
+package com.example.demo.todolist.dto;
 
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
-public class UsersDto {
+public class UserDto {
     private Long seq;
     private String userId;
     private String password;
@@ -15,7 +15,7 @@ public class UsersDto {
     private String imgUrl;
     private int loginCnt;
 
-    public UsersDto(Long seq, String userId, String password, String name, LocalDateTime createDt, LocalDateTime lastLoginDt, String imgUrl, int loginCnt) {
+    public UserDto(Long seq, String userId, String password, String name, LocalDateTime createDt, LocalDateTime lastLoginDt, String imgUrl, int loginCnt) {
         this.seq = seq;
         this.userId = userId;
         this.password = password;
