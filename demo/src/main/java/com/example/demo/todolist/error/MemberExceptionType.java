@@ -2,7 +2,7 @@ package com.example.demo.todolist.error;
 
 import org.springframework.http.HttpStatus;
 
-public enum UserExceptionType implements BaseExceptionType{
+public enum MemberExceptionType implements BaseExceptionType{
     // TODO 에러 출력 미흡
     // 회원가입
     EXIST_ID(700, HttpStatus.OK, "이미 존재하는 아이디입니다."),
@@ -14,7 +14,7 @@ public enum UserExceptionType implements BaseExceptionType{
     NOT_EXIST_USER(705, HttpStatus.OK, "존재하지 않는 아이디입니다.");
 
 
-    UserExceptionType(int errorCode, HttpStatus httpStatus, String errorMessage) {
+    MemberExceptionType(int errorCode, HttpStatus httpStatus, String errorMessage) {
     }
 
     @Override

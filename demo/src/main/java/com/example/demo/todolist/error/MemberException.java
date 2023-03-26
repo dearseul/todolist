@@ -2,11 +2,11 @@ package com.example.demo.todolist.error;
 
 import org.springframework.http.HttpStatus;
 
-public class UserException extends BaseException {
+public class MemberException extends BaseException {
 
     private BaseExceptionType exceptionType;
 
-    public UserException(BaseExceptionType exceptionType) {
+    public MemberException(BaseExceptionType exceptionType) {
         this.exceptionType = exceptionType;
     }
 
